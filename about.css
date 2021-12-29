@@ -329,6 +329,7 @@ body {
     color: #fff;
     left: 20px;
     top: 20px;
+    cursor: pointer;
     animation: mediabanner 1s ease alternate infinite ;
   }
   .about-cont {

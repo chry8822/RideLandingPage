@@ -76,8 +76,16 @@ function menuClose() {
 }
 
 upbtn.addEventListener("click",up);
+
 modalbtn.addEventListener("click", openmodal);
+modalbtn.addEventListener("touchstart", openmodal);
+
 closemodal.addEventListener("click", modalclose);
+closemodal.addEventListener("touchstart", modalclose);
 menu.addEventListener("click", menuOpen);
+
+
 closemenu.addEventListener("click", menuClose);
+closemenu.addEventListener("touchstart", menuClose);
+
 learn.addEventListener("click", more);

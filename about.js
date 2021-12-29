@@ -60,7 +60,14 @@ function up() {
   window.scrollTo({ top: loca2, behavior:"smooth"});
 }
 
+about.addEventListener("touchstart", aboutclick)
 about.addEventListener('click', aboutclick)
+
 upbtn.addEventListener("click",up);
+
 menu.addEventListener("click", menuOpen);
+menu.addEventListener("touchstart", menuOpen);
+
+
 closemenu.addEventListener("click", menuClose);
+closemenu.addEventListener("touchstart", menuClose);
