@@ -857,7 +857,7 @@ body {
 
 @media screen and (max-width:420px)  {
     .video-wrap {
-      display:none;
+      
     }
     .banner {
       opacity: 1;
