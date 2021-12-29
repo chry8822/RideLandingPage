@@ -13,7 +13,7 @@ let upbtn = document.querySelector('.upbtn');
 
 // 이메일 서밋으로 모달 열기
 function openmodal(e) {
- 
+ alert('클릭클릭클릭클릭')
   e.preventDefault();
   console.log("클릭11", e.path, e.path.includes);
   let email = document.getElementById("email").value;
