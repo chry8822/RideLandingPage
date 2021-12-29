@@ -27,14 +27,27 @@ function openmodal(e) {
     alert("이메일 형식에 맞게 입력해주세요");
     return false;
   }
-  window.onclick = function (event) {
-    // console.log("클릭", event.path, event.path.includes);
-    if (event.path.includes(modal) && !event.path.includes(mainmodal)) {
-      modalclose();
-      window.onclick = null;
-    };
-  };
+  // window.onclick = function (event) {
+  //   // console.log("클릭", event.path, event.path.includes);
+  //   if (event.path.includes(modal) && !event.path.includes(mainmodal)) {
+  //     modalclose();
+  //     window.onclick = null;
+  //   };
+  // };
 }
+
+ function windowmodal (event) {
+  // console.log("클릭", event.path, event.path.includes);
+  if (event.path.includes(modal) && !event.path.includes(mainmodal)) {
+    modalclose();
+    window.onclick = null;
+  };
+};
+
+
+
+
+
 
 
 // 모달 닫기
@@ -61,18 +74,43 @@ function menuOpen(e) {
   e.stopPropagation();
   hidemenu.style.transform = "translate(" + 0 + "%)";
 
-  window.onclick = function (event) {
+  // window.onclick = function (event) {
+  //   if (!event.path.includes(hidemenu)) {
+  //     menuClose();
+  //     window.onclick = null;
+  //   }
+  // };
+}
+
+function windowclose (event) {
+  if (!event.path.includes(hidemenu)) {
+    menuClose();
+    window.onclick = null;
+    window.ontouchstart = null;
+
+  }
+};
+
+
+
+
+
+function windowtouch(event) {
+  if(window.onclick || window.ontouchstart){
     if (!event.path.includes(hidemenu)) {
       menuClose();
       window.onclick = null;
-    }
-  };
-}
+      window.ontouchstart = null;
+   }
+ }
+}  
+
 
 // 메뉴 닫기
 function menuClose() {
   // hidemenu.style.transform = "translate(" + 100 + "%)";
   hidemenu.style.transform = "translate(" + 100 + "%)";
+  hidemenu.style['-webkit-transform'] = "translate(" + 100 + "%)";
 }
 
 upbtn.addEventListener("click",up);
@@ -89,3 +127,9 @@ closemenu.addEventListener("click", menuClose);
 closemenu.addEventListener("touchstart", menuClose);
 
 learn.addEventListener("click", more);
+
+window.addEventListener('touchstart', windowclose);
+window.addEventListener('click', windowclose);
+
+window.addEventListener('touchstart', windowmodal);
+window.addEventListener('click', windowmodal);
