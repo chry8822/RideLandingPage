@@ -856,8 +856,8 @@ body {
 
 
 @media screen and (max-width:420px)  {
-    #player {
-      display: none;
+    .video-wrap {
+      display:none;
     }
     .banner {
       opacity: 1;
@@ -949,6 +949,7 @@ body {
       text-indent: 50px;
     }
     .submit-btn{
+      font-size: 12px;
       height: 30px;
     }
     .footer-item i:hover {
