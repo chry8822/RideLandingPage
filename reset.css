@@ -24,6 +24,13 @@ time, video, button {
     vertical-align: baseline;
     text-decoration: none;
 }
+a {
+    color: inherit;
+
+}
+a:link {
+    color: inherit;
+}
 a:active, a:visited  {
     color: inherit;
 }

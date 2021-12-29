@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>랜딩페이지</title>
-    <script src="https://kit.fontawesome.com/c46829a8f8.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  
-  <body>
-    <section id="main">
-      
-      <!-- <div class="videowrap">
-        <!-- <iframe id="player" width="1692" height="1152" src="https://www.youtube.com/embed/84_DGOAetGE?autoplay=1&mute=1&loop=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-      </div> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>랜딩페이지</title>
+  <script src="https://kit.fontawesome.com/c46829a8f8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <video id="player" autoplay muted loop>
+    <source src="./video/1.mp4" type="video/mp4">
+  </video>
+  <section id="main">
+
+    <!-- <iframe id="player" width="1692" height="1152" src="https://www.youtube.com/embed/84_DGOAetGE?autoplay=1&mute=1&loop=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
     <!-- 랜딩 픽스 메뉴바 -->
     <div class="hide-menu">
       <ul class="hide-list">
-        <li class="hide-item"><a href="javascript:void(0)">HOME</a></li>
-        <li class="hide-item"><a href="javascript:void(0)">ABOUT</a></li>
+        <li class="hide-item"><a href="./index.html">HOME</a></li>
+        <li class="hide-item"><a href="./about.html">ABOUT</a></li>
         <li class="hide-item"><a href="javascript:void(0)">SUPPORT</a></li>
         <li class="hide-item"><a href="javascript:void(0)">SHOP</a></li>
-      </ul>
+      </ul>     
+        <i class="menu-close fas fa-times"></i>      
     </div>
     <h1 class="visuallyhidden">랜딩페이지</h1>
     <!-- 섹션1 해드-->
     <header class="banner-header">
-      <a class="banner-home" href="">HOME</a>
-      <button class="menu-btn">menu</button>
+      <a class="banner-home" href="./index.html">MOTORIDE</a>
+      <button class="menu-btn">MENU</button>
+      <div class="upbtn"></div>
     </header>
     <!-- 섹션 1 -->
     <section class="banner">
       <article class="banner-wrap">
-         <div class="banner-back">
-            <h2 class="banner-title">GO WITH THE FLOW</h2>
-            <P class="banner-text">
-              keep true to the dreams of thy youth <br>
-              <span class="banner-text-ko">"당신이 젊은 시절 꿈꾸었던 것에 충실하라."</span> <br>
-              -by Friedrich von Schiller-
-            </P> 
-          </div>    
-          <button class="banner-btn">Let's Ride</button>
-        </article>
-        <a class="banner-scroll" href="">LEARN MORE<i class="far fa-arrow-alt-circle-down"></i></a>
-        
+        <div class="banner-back">
+          <h2 class="banner-title">GO WITH THE FLOW</h2>
+          <P class="banner-text">
+            keep true to the dreams of thy youth <br>
+            <span class="banner-text-ko">"당신이 젊은 시절 꿈꾸었던 것에 충실하라."</span> <br>
+            -by Friedrich von Schiller-
+          </P>
+        </div>
+        <a href="./about.html" class="banner-btn">Let's Ride</a>
+      </article>
+      <div class="banner-scroll" href="">LEARN MORE<i class="far fa-arrow-alt-circle-down"></i></div>
+
     </section>
     <!-- 섹션 2 -->
     <section class="stack">
@@ -75,7 +78,9 @@
         </div>
         <div class="bike-text-wrap">
           <h2>Lorem ipsum dolor sit amet consectetur.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error maxime minus veniam, facere veritatis deserunt optio possimus, minima tempore perferendis id quaerat amet vel alias, magni necessitatibus quibusdam nihil dolor.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error maxime minus veniam, facere veritatis
+            deserunt optio possimus, minima tempore perferendis id quaerat amet vel alias, magni necessitatibus
+            quibusdam nihil dolor.</p>
         </div>
       </section>
       <section class="bike-wrap">
@@ -84,7 +89,9 @@
         </div>
         <div class="bike-text-wrap">
           <h2>Deserunt reprehenderit ipsam ducimus, repudiandae pariatur voluptatum fugit?</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolores quo consequuntur expedita omnis atque placeat eveniet quae nesciunt voluptas, dignissimos illo sint quaerat. Laboriosam mollitia totam accusantium provident nulla?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolores quo consequuntur expedita omnis
+            atque placeat eveniet quae nesciunt voluptas, dignissimos illo sint quaerat. Laboriosam mollitia totam
+            accusantium provident nulla?</p>
         </div>
       </section>
       <section class="bike-wrap">
@@ -93,7 +100,9 @@
         </div>
         <div class="bike-text-wrap">
           <h2> Blanditiis excepturi et, eligendi officiis illum repudiandae .</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio officia reprehenderit quisquam quasi recusandae! Aspernatur, laboriosam commodi? Numquam, quas. Aut corporis laudantium nam saepe iste facere quod perferendis possimus sequi.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio officia reprehenderit quisquam quasi
+            recusandae! Aspernatur, laboriosam commodi? Numquam, quas. Aut corporis laudantium nam saepe iste facere
+            quod perferendis possimus sequi.</p>
         </div>
       </section>
     </section>
@@ -159,9 +168,10 @@
       <article class="subcribe-wrap">
         <div class="subcribe-text-wrap">
           <h2 class="subcribe-title">Subscribe to our site</h2>
-          <p class="subcribe-text">Lorem ipsum dolor sit amet, consectetur Eum odit sed saepe adipisicing elit. ipsum dolor sit amet, adipisicing elit Eum odit sed saepe!</p>
+          <p class="subcribe-text">Lorem ipsum dolor sit amet, consectetur Eum odit sed saepe adipisicing elit. ipsum
+            dolor sit amet, adipisicing elit Eum odit sed saepe!</p>
         </div>
-        <form class="subcribe-btn" action="post">
+        <form class="subcribe-btn">
           <div class="input-wrap">
             <label for="email"></label>
             <input id="email" type="email" name="" placeholder="name@email.com">
@@ -171,37 +181,39 @@
         </form>
         <!-- 모달 display none , subscribe 버튼 클릭시 show -->
       </article>
-      <!-- <div id="modal">
-        <img src="" alt="모달이미지">
-        <h2 class="modal-title">Thank you!</h2>
-        <p class="modal-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <button class="modal-close">Keep looking</button>
-      </div> -->
+
+      <div class="modal-wrap">
+        <div id="modal">
+          <h2 class="modal-title">Thank you!</h2>
+          <p class="modal-text">Lorem ipsum dolor sit amet consectetur covelope.tistory adipisicing.</p>
+          <button class="modal-close">Keep looking</button>
+        </div>
+      </div>
     </section>
     <!-- 풋터 -->
     <footer class="footer">
       <ul class="footer-list">
         <li class="footer-item">
-          <a href="">
-            <i class="fab fa-facebook-square"></i>
+          <a href="https://covelope.tistory.com/" target="_blank">
+            <i class="fab fa-blogger"></i>
           </a>
-          facebook
+          blog
         </li>
         <li class="footer-item">
-          <a href="">
+          <a href="https://www.instagram.com/chrysan_th/" target="_blank">
             <i class="fab fa-instagram-square"></i>
           </a>
           insta
         </li>
         <li class="footer-item">
-          <a href="">
-            <i class="fab fa-twitter-square"></i>
-          </a>
-          twitter
+          <a href="https://github.com/chry8822" target="_blank">
+            <i class="fab fa-github"></i>
+            </a>
+            github
         </li>
         <li class="footer-item">
-          <a href="">
-            <i class="fas fa-envelope-square"></i>
+          <a href="mailto:"goggg8822@naver.com" target="_blank">
+            <i class="fas fa-envelope"></i>
           </a>
           mail
         </li>
