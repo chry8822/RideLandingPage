@@ -13,9 +13,9 @@ let upbtn = document.querySelector('.upbtn');
 
 // 이메일 서밋으로 모달 열기
 function openmodal(e) {
- alert('클릭클릭클릭클릭')
+ 
   e.preventDefault();
-  //console.log("클릭11", e.path, e.path.includes);
+  // console.log("클릭11", e.path, e.path.includes);
   let email = document.getElementById("email").value;
 
   var reg_email =
@@ -28,7 +28,7 @@ function openmodal(e) {
     return false;
   }
   window.onclick = function (event) {
-    //console.log("클릭", event.path, event.path.includes);
+    // console.log("클릭", event.path, event.path.includes);
     if (event.path.includes(modal) && !event.path.includes(mainmodal)) {
       modalclose();
       window.onclick = null;
@@ -50,7 +50,7 @@ function more() {
 // 화면 위로 올리는 버튼
 
 function up() {
-  //console.log('클릭')
+  console.log('클릭')
   window.scrollTo({ top: loca2, behavior:"smooth"});
 }
 
@@ -71,6 +71,7 @@ function menuOpen(e) {
 
 // 메뉴 닫기
 function menuClose() {
+  // hidemenu.style.transform = "translate(" + 100 + "%)";
   hidemenu.style.transform = "translate(" + 100 + "%)";
 }
 
