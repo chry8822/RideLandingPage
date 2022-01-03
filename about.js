@@ -5,7 +5,7 @@ let loca2 = document.querySelector(".banner-header").offsetTop;
 let upbtn = document.querySelector('.upbtn');
 let show = document.querySelector('.about-cont');
 let about = document.querySelector('.about-click');
-
+let aboutlist = document.querySelector('.about-list')
 
 
 
@@ -27,10 +27,10 @@ function aboutclick() {
 }
 
 function windowabout(event) {
-  if (event.path.includes(show) && !event.path.includes(about)) {
+  if (event.path.includes(show) && !event.path.includes(aboutlist)) {
     aboutclose();
     about.style.display = 'flex';
-    window.onclick = null;
+    
   }
 };
 
