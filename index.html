@@ -7,8 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>랜딩페이지</title>
   <script src="https://kit.fontawesome.com/c46829a8f8.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/공통스타일.css">
+
 </head>
 
 <body>
@@ -18,15 +20,20 @@
     </video>
  </div>
   <section id="main">
+
+    <!-- <iframe id="player" width="1692" height="1152" src="https://www.youtube.com/embed/84_DGOAetGE?autoplay=1&mute=1&loop=0&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+    <!-- 랜딩 픽스 메뉴바 -->
     <div class="hide-menu">
       <ul class="hide-list">
         <li class="hide-item"><a href="./index.html">HOME</a></li>
         <li class="hide-item"><a href="./about.html">ABOUT</a></li>
-        <li class="hide-item"><a href="javascript:void(0)">SUPPORT</a></li>
-        <li class="hide-item"><a href="javascript:void(0)">SHOP</a></li>
+        <li class="hide-item"><a href="./support.html">SUPPORT</a></li>
+        <li class="hide-item"><a href="./shop.html">SHOP</a></li>
       </ul>     
         <i class="menu-close fas fa-times"></i>      
     </div>
+    <h2 class="visuallyhidden">랜딩페이지</h2>
     <!-- 섹션1 해드-->
     <header class="banner-header">
       <a class="banner-home" href="./index.html">MOTORIDE</a>
@@ -35,7 +42,6 @@
     </header>
     <!-- 섹션 1 -->
     <section class="banner">
-      <h1 class="visuallyhidden">랜딩페이지</h1>
       <article class="banner-wrap">
         <div class="banner-back">
           <h2 class="banner-title">GO WITH THE FLOW</h2>
@@ -47,7 +53,7 @@
         </div>
         <a href="./about.html" class="banner-btn">Let's Ride</a>
       </article>
-      <div class="banner-scroll" href="">LEARN MORE<i class="far fa-arrow-alt-circle-down"></i></div>
+      <div class="banner-scroll">LEARN MORE<i class="far fa-arrow-alt-circle-down"></i></div>
 
     </section>
     <!-- 섹션 2 -->
@@ -228,8 +234,10 @@
     </footer>
     <!-- <div class="noneclick"></div> -->
   </section>
-  <script src="./pollyfill.js"></script>
-  <script src="./script.js"></script>
+  <script src="./JS/pollyfill.js"></script>
+  <script src="./JS/script.js"></script>
+  <script src="./JS/공통js.js"></script>
+
 </body>
 
 </html>

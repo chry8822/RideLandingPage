@@ -1,0 +1,124 @@
+/*  about 페이지 */
+
+/* 섹션1 배너 */
+
+.click-wrap {
+  position: relative;
+  width: 100%;
+  transition: all 1s;
+}
+.about-click {
+  top: 100PX;
+  left: 30px;
+  position: absolute;
+  display: inline-block;
+  font-size: 200px;
+  color: #fff;
+  border-bottom: 5px solid #fff;
+  cursor: pointer;
+  z-index: 99;
+  transition: all 0.5s;
+  animation: banner 1s ease infinite alternate;
+}
+.about-click:hover {
+  color: #b93b2f;
+  border-color: #b93b2f;
+  transition: all 1s ;
+}
+
+/* 섹션2 */
+
+#player {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  object-fit: cover;
+  opacity: 1;
+  z-index: -10;
+}
+
+.about-cont {
+ padding: 120px;
+ opacity: 0;
+ transition: all 0.5s;
+}
+.about-wrap {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  background-color: #F2EFE9;
+  opacity: 0.8;
+}
+
+.about-list {
+  width: 100%;
+  height: 100%;
+  padding: 50px 170px;
+  box-sizing: border-box;
+}
+.about-item:first-child {
+  margin-bottom: 70px;
+  border-bottom: 2px solid black;
+}
+
+.about-item h3 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.about-item h4 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.about-item p {
+  font-size: 18px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width:1200px) {
+  .about-list {
+    padding: 40px 100px;
+  }
+}
+@media screen and (max-width:900px) {
+  .about-list {
+    padding: 40px 50px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:420px)  {
+  
+  .bkimg {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: url(./img/섹션1.jpg) no-repeat center;
+    background-size:cover ;
+    z-index: -1;
+  }
+  .click-wrap .about-click {
+    font-size: 100px;
+    color: #fff;
+    left: 20px;
+    top: 20px;
+    cursor: pointer;
+    animation: mediabanner 2s ease alternate infinite ;
+  }
+  .about-cont {
+    display: block;
+    padding: 30px;
+  }
+  .about-list {
+    padding: 10px 20px;
+  }
+  .about-item p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+}

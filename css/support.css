@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+KR:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+
+
+body {
+    font-family: 'Noto Serif KR', serif;
+    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Montserrat', sans-serif; */
+    min-width: 600px;
+  }
+
+/* support 컨텐츠 */
+
+.main-img-wrap {
+    position: relative;
+    width: 100%;
+    height: 540px;
+    background: url(../img/메인.jpg) no-repeat center/cover;
+    /* background-position: 0 -20px; */
+    /* background-size: 100vw; */
+}
+.main-img-wrap::after {
+    content: 'Support';
+    display: inline-block;
+    position: absolute;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.support-header {
+    position: relative;
+    padding: 80px 0 80px 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.support-header::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid #bdbdbd;
+    width: 100%;
+    bottom:  0;
+}
+.header-itme-list {
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.header-itme-list .header-item {
+     margin: 10px 30px 10px 30px ;
+}
+.header-itme-list a {
+    font-size: 14px;
+}
+
+.header-itme-list a:hover {
+    font-weight: bolder;
+    color:#b93b2f;
+    border-bottom: 1.3px solid #b93b2f;
+}
+.header-itme-list .item-img {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s;
+}
+
+.second-item-wrap {
+    width: 100%;
+    height: 100%;
+    
+    /* padding: 50px 0 50px 0; */
+}
+/* .second-item-wrap::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    border-bottom: 1px solid #bdbdbd;
+    width: 100%;
+    bottom:  0;
+} */
+.second-item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    transition: all 0.3s;
+    flex-wrap: wrap;
+
+}
+.second-item-list .scon-item {
+    margin: 0 50px 0 50px;
+    transition: all 0.3s;
+}
+.second-item-list .scon-item:hover  {
+    text-decoration: underline;
+}
+.scon-item:hover > a .item-img {
+    width: 40px;
+    height: 40px;
+    transition: all 0.1s;
+}
+.second-item-list .item-img {
+    margin: 0 auto;
+    padding-bottom: 15px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s;
+}
+.input-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+}
+.search-label {
+    position: relative;
+    width: 50%;
+    margin-bottom: 50px;
+}
+.input-search h2 {
+    font-size: 40px;
+    margin:50px 0 30px 0;
+}
+.support-search {
+    width: 100%;
+    height: 40px;
+    text-indent: 50px;
+    border:1px solid #767676;
+    border-radius: 5px;
+}
+.support-search:focus {
+    border: 2px solid #494949;
+}
+.support-search::placeholder {
+    font-size: 16px;
+}
+.icon-search {
+    position: absolute;
+    /* float: left; */
+    display: block;
+    background: url(../img/돋보기.png) no-repeat center/cover;
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+    margin-left: 15px;
+    top: 11%;
+}
+
+.upgrade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 850px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+.img-wrap {
+    width: 50%;
+    overflow: hidden;
+}
+.img-wrap img {
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.img-wrap img:hover {
+    transform: scale(1.3);
+    transition: all 0.3s;
+
+}
+.upgrade-list {
+    width: 50%;
+    padding-left: 35px;
+}
+.item-list h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+}
+.item-list p {
+    font-size: 18px;
+    line-height: 25px;
+    padding: 30px  0;
+    margin-bottom: 50px;
+    font-family: 'Noto Serif KR', serif;
+}
+.item-list .custom-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: royalblue;
+}
+.item-list .custom-link::after {
+    content: '❯';
+    font-size: 18px;
+    display: inline-block;
+}
+.item-list .custom-link:hover {
+    color: rgb(51, 85, 189);
+    text-decoration: underline;
+}
+.img-wrap.custom {
+    order: 2;
+}
+.upgrade.custom {
+    margin-bottom: 80px;
+}
+
+/* 모달 */
+
