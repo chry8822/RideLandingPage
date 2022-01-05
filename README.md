@@ -1,8 +1,8 @@
 
 
-# 랜딩페이지 (RideLendingPage)  
-- [랜딩페이지 사이트 링크](https://chry8822.github.io/RideLendingPage/index.html) 🌐
-* 소요기간 3일
+# 랜딩페이지 (RideLandingPage)  
+- [랜딩페이지 사이트 링크](https://chry8822.github.io/RideLandingPage/index.html) 🌐
+* 소요기간 ~~ 일
 
 
   
