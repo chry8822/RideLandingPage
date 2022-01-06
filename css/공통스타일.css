@@ -357,6 +357,12 @@ body {
         .copy-item:nth-child(2)::before {
             display: none;
         }
+
+        /*  */
+
+        .hide-menu {
+          width: 150px;
+        }
   }
 
 

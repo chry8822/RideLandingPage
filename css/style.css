@@ -51,7 +51,6 @@
   flex-direction: column;
   align-items: center;
   font-family: 'Bebas Neue', cursive;
-  padding: 30px 30px;
   
 }
 .banner-back::after {
@@ -633,6 +632,9 @@
     .banner {
       opacity: 1;
     }  
+    .banner .banner-text {
+      font-size: 18px;
+    }
     .upbtn {
       position: absolute;
       right: 20px;
