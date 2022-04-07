@@ -32,13 +32,18 @@ function openmodal(e) {
   // };
 }
 
- function windowmodal (event) {
-  // console.log("클릭", event.path, event.path.includes);
+
+function windowmodal (event) {
+  //  let path = event.path || (event.composedPath && event.composedPath());
+   console.log("123123")
+   console.log('클릭', event.path,event.composedPath)
+
   if (event.path.includes(modal) && !event.path.includes(mainmodal)) {
     modalclose();
     window.onclick = null;
   };
 };
+
 
 // 모달 닫기
 function modalclose() {
@@ -95,13 +100,9 @@ modalbtn.addEventListener("touchstart", openmodal);
 
 closemodal.addEventListener("click", modalclose);
 closemodal.addEventListener("touchstart", modalclose);
-menu.addEventListener("click", menuOpen);
-
-closemenu.addEventListener("click", menuClose);
-closemenu.addEventListener("touchstart", menuClose);
 
 window.addEventListener('touchstart', windowclose);
 window.addEventListener('click', windowclose);
 
-window.addEventListener('touchstart', windowmodal);
 window.addEventListener('click', windowmodal);
+window.addEventListener('touchstart', windowmodal);
